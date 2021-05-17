@@ -1,7 +1,7 @@
 # Личный проект «Нёрдс»
 
 * Студент: [Adilet Egemberdiev](https://up.htmlacademy.ru/htmlcss/31/user/1790213).
-* Наставник: `Неизвестно`.
+* Наставник: [Tatiana Simonenko](https://htmlacademy.ru/profile/tatien).
 
 ---
 
