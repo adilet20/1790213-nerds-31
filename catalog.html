@@ -2,15 +2,15 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
-    <title>Интернет магазин «Nerds»</title>
+    <title>HTML Academy: Нёрдс</title>
     <!-- <link rel="stylesheet" href="style.css"> -->
   </head>
-  <header>
-    <nav>
-        <ul>
-            <a>
+    <header>
+        <nav>
+            <ul>
+            <li><a>
                 <img src="img/nerds-logo.svg" width="159.87" height="65.20" alt="Логотип Интернет магазин «Nerds»">
-            </a>
+            </a></li>
             <li><a href="#">Студия</a></li>
             <li><a href="#">Клиенты</a></li>
             <li><a href="catalog.html">Магазин</a></li>
@@ -20,7 +20,8 @@
             <img src="img/cart-icon.svg" width="15" height="15" alt="Корзина">
             Корзина
         </a>
-    </nav>
+        </nav>
+    </header>
     <main>
         <h1>Интернет магазин «Nerds»</h1>
         <section><h2>Магазин готовых шаблонов</h2></section>
@@ -28,17 +29,17 @@
             <h2>Каталог</h2>
             <h3>Стоимость:</h3>
             <form action="https://echo.htmlacademy.ru/courses" method="post">
-                <label for="number">Цена</label>
-                <input type="number" min="0" max="15000" id="number"><br>
-                <label>Сетка:</label><br>
+                <legend>Цена</legend>
+                <label><input type="number" min="0" max="15000" id="number"></label><br><br>
+                <legend>Сетка:</legend>
                 <label for="radiobox1">Адаптивная</label>
                 <input type="radio" name="radiobox" id="radiobox1" checked><br> 
                 <label for="radiobox2">Фиксированная</label>
                 <input type="radio" name="radiobox" id="radiobox2"><br>
                 <label for="radiobox3">Резиновая</label>
-                <input type="radio" name="radiobox" id="radiobox3"><br>
+                <input type="radio" name="radiobox" id="radiobox3"><br><br>
 
-                <label>Особенности:</label><br>
+                <legend>Особенности:</legend>
                 <label for="checkbox1">Слайдер</label>
                 <input type="checkbox" name="checkbox" id="checkbox1" checked><br>
                 <label for="checkbox2">Блок преимуществ</label>
@@ -49,15 +50,16 @@
                 <input type="checkbox" name="checkbox" id="checkbox4"><br>
                 <label for="checkbox5">Корзина</label>
                 <input type="checkbox" name="checkbox" id="checkbox5"><br>
+                <button>ПОКАЗАТЬ</button>
             </form>
-            <button>ПОКАЗАТЬ</button>
        </section>
        <section>
+           <h2>Сортировать по цене</h2>
            <h3>Сортировать:</h3>
            <ul>
-               <li>По цене</li>
-               <li>По типу</li>
-               <li>По названию</li>
+               <li><a href="#">По цене</a></li>
+               <li><a href="#">По типу</a></li>
+               <li><a href="#">По названию</a></li>
            </ul>
            <!-- Temporary button labels -->
            <a href="#">кнопка наверх</a><br>
@@ -68,42 +70,42 @@
             <article>
                 <h3>Шаблон Sedona</h3>
                 <img src="img/Mask Group1.png" width="358" height="578" alt="Шаблон седона">
-                <a href="#">Sedona</a>
+                <p>Sedona</p>
                 <p>Информационный сайт<br>для туристов</p>
                 <a href="#">9 900 ₽</a>
                 </article>
             <article>
                 <h3>Шаблон Pink App</h3>
                 <img src="img/Mask Group2.png" width="358" height="578" alt="Шаблон Pink App">
-                <a href="#">Pink App</a>
+                <p>Pink App</p>
                 <p>Продуктовый лендинг<br>приложения для iOS и Android</p>
                 <a href="#">9 900 ₽</a>
             </article>
             <article>
                 <h3>Шаблон Barbershop</h3>
                 <img src="img/Mask Group3.png" width="358" height="578" alt="Шаблон Barbershop">
-                <a href="#">Barbershop</a>
+                <p>Barbershop</p>
                 <p>Сайт салона красоты.<br>Для мужчин, да.</p>
                 <a href="#">9 900 ₽</a>
             </article>
             <article>
                 <h3>Шаблон MISHKA</h3>
                 <img src="img/Mask Group4.png" width="358" height="578" alt="Шаблон MISHKA">
-                <a href="#">MISHKA</a>
+                <p>MISHKA</p>
                 <p>Интернет-магазин<br>вязаных игрушек</p>
                 <a href="#">9 900 ₽</a>
             </article>
             <article>
                 <h3>Шаблон A Plus</h3>
                 <img src="img/Mask Group5.png" width="358" height="578" alt="Шаблон A Plus">
-                <a href="#">A Plus</a>
+                <p>A Plus</p>
                 <p>Лендинг курсов повышения<br>квалификации</p>
                 <a href="#">9 900 ₽</a>
             </article>
             <article>
                 <h3>Шаблон КВАСТ</h3>
                 <img src="img/Mask Group6.png" width="358" height="578" alt="Шаблон КВАСТ">
-                <a href="#">КВАСТ</a>
+                <p>КВАСТ</p>
                 <p>Промо-сайт производителя<br>крафтового кваса</p>
                 <a href="#">9 900 ₽</a>
             </article>
