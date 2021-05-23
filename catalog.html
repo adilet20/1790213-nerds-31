@@ -31,29 +31,52 @@
             <form action="https://echo.htmlacademy.ru/courses" method="post">
             <fieldset>
                 <legend>Цена</legend>
-                <label><input type="number" min="0" max="15000" id="number"></label><br><br>
+                <label for="number">от</label>
+                <input type="number" min="0" max="15000" id="number"><br><br>
+                <label for="number-1">до</label>
+                <input type="number" min="0" max="15000" id="number-1">
             </fieldset>
             <fieldset>
                 <legend>Сетка:</legend>
-                <label for="radiobox1">Адаптивная</label>
-                <input type="radio" name="radiobox" id="radiobox1" checked><br> 
-                <label for="radiobox2">Фиксированная</label>
-                <input type="radio" name="radiobox" id="radiobox2"><br>
-                <label for="radiobox3">Резиновая</label>
-                <input type="radio" name="radiobox" id="radiobox3"><br><br>
+                <ul>
+                    <li>
+                    <label for="radiobox1">Адаптивная</label>
+                    <input type="radio" name="radiobox" id="radiobox1" checked><br> 
+                    </li>
+                    <li>
+                    <label for="radiobox2">Фиксированная</label>
+                    <input type="radio" name="radiobox" id="radiobox2"><br>
+                    </li>
+                    <li>
+                    <label for="radiobox3">Резиновая</label>
+                    <input type="radio" name="radiobox" id="radiobox3"><br><br>
+                    </li>
+                </ul>
             </fieldset>
             <fieldset>
                 <legend>Особенности:</legend>
-                <label for="checkbox1">Слайдер</label>
-                <input type="checkbox" name="checkbox" id="checkbox1" checked><br>
-                <label for="checkbox2">Блок преимуществ</label>
-                <input type="checkbox" name="checkbox" id="checkbox2"><br>
-                <label for="checkbox3">Новости</label>
-                <input type="checkbox" name="checkbox" id="checkbox3" checked><br>
-                <label for="checkbox4">Галерея</label>
-                <input type="checkbox" name="checkbox" id="checkbox4"><br>
-                <label for="checkbox5">Корзина</label>
-                <input type="checkbox" name="checkbox" id="checkbox5"><br>
+                <ul>
+                    <li>
+                    <label for="checkbox1">Слайдер</label>
+                    <input type="checkbox" name="checkbox" id="checkbox1" checked><br>
+                    </li>
+                    <li>
+                    <label for="checkbox2">Блок преимуществ</label>
+                    <input type="checkbox" name="checkbox" id="checkbox2"><br>
+                    </li>
+                    <li>
+                    <label for="checkbox3">Новости</label>
+                    <input type="checkbox" name="checkbox" id="checkbox3" checked><br>
+                    </li>
+                    <li>
+                    <label for="checkbox4">Галерея</label>
+                    <input type="checkbox" name="checkbox" id="checkbox4"><br>
+                    </li>
+                    <li>
+                    <label for="checkbox5">Корзина</label>
+                    <input type="checkbox" name="checkbox" id="checkbox5"><br>
+                    </li>
+                </ul>
             </fieldset>
                 <button>ПОКАЗАТЬ</button>
             </form>
