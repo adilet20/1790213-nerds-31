@@ -5,7 +5,7 @@
     --basic-dark: #A6A6A6;
     --basic-neutral: #C1C1C1;
     --basic-extra-white: #EEEEEE;
-    --basic-dark-whithe: ##E1E1E1;
+    --basic-dark-whithe: #E1E1E1;
 
 
     --special-red: #FB565A;
@@ -58,10 +58,10 @@ a {
     text-decoration: none;
   }
 
-img {
+/* img {
     max-width: 100%;
     height: auto;
-  }
+  } */
 
 .main-navigation {
     font-size: 16px;
@@ -104,9 +104,9 @@ img {
 }
 
 .show-button{
-    /* /* position: absolute; */
     /* width: 240px;
     height: 50px;  */
+    font: inherit;
     font-weight: 500;
     font-size: 16px;
     line-height: 18px;
@@ -114,6 +114,7 @@ img {
     vertical-align: middle;
     color: var(--basick-white);
     background-color: var(--special-red);
+    border: none;
 }
 
 .show-card a:hover,
@@ -227,6 +228,8 @@ img {
     font-size: 16px;
     line-height: 18px;
     text-transform: uppercase;
+    text-align: center;
+    vertical-align: middle;
     color: var(--basick-white);
     background-color: var(--special-red);
 }
@@ -238,8 +241,17 @@ img {
 }
 
 .social-button {
-    background-color: var(--basic-dark-whith);
+    background-color: var(--basic-dark-whithe);
 }
+
+/* .social-icon { 
+    background-color: var(--special-green);
+    width: 81px;
+    height: 81px;
+    border-radius: 50%;
+    text-align: center;
+    vertical-align:bottom;
+} */
 
 .social-list a:hover,
 .social-list a:focus {
@@ -276,13 +288,36 @@ img {
     color: var(--basic-black);
 }
 
+.modal-container input,
+.modal-container2 textarea {
+    background-color: transparent;
+    background: var(--basick-white);
+    border: 2px solid var(--special-extra-white);
+    box-sizing: border-box;
+    border-radius: 3px;
+}
+
+.modal-container input:focus,
+.modal-container2 textarea:focus {
+    border-color: var(--basic-black);
+}
+
+.modal-container input:hover,
+.modal-container2 textarea:hover {
+    border-color: var(--special-one-dark);
+}
+
 .modal-button {
+    font: inherit;
     font-weight: 500;
     font-size: 16px;
     line-height: 18px;
+    text-align: center;
+    vertical-align: middle;
     text-transform: uppercase;
     color: var(--basick-white);
     background-color: var(--special-red);
+    border: none;
 }
 
 
