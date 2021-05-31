@@ -1,1 +1,288 @@
+:root {
+    --basic-black: #000000;
+    --basic-extra-dark: #283136;
+    --basick-white: #FFFFFF;
+    --basic-dark: #A6A6A6;
+    --basic-neutral: #C1C1C1;
+    --basic-extra-white: #EEEEEE;
+    --basic-dark-whithe: ##E1E1E1;
+
+
+    --special-red: #FB565A;
+    --special-green: #00CA74;
+    --special-yellow: #EFC849;
+    --special-dark: #4D4D4D;
+
+    --special-extra-dark: #888888;
+    --special-extra-white: #D7DCDE;
+    --special-white: #666666;
+
+    /* special-colorII */
+    /* Наведение */
+    --special-one-red: #E74246;  
+    --special-one-green:#00BC6C;
+    --special-one-yellow: #EAB534;
+    --special-one-dark: #B4B9BB;
+        /* нажатие */
+    --special-two-red: #D7373B;
+    --special-two-green: #00AA62;  
+    --special-two-yellow: #E5A722;
+}
+
+/* bGloal */
+
+.page-body {
+    min-width: 1440px;
+    margin: 0;
+    padding: 0;
+    font-family: "Roboto", Arial, sans-serif;
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: normal;
+    color: var(--basic-extra-dark);
+    background-color: var(--basick-white);   
+}
+
+.visually-hidden {
+    position: absolute;
+    clip: rect(0 0 0 0);
+    clip-path: inset(50%);
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+a {
+    text-decoration: none;
+  }
+
+img {
+    max-width: 100%;
+    height: auto;
+  }
+
+.main-navigation {
+    font-size: 16px;
+    line-height: 30px;
+    font-weight: 500;
+    text-transform: uppercase;
+    color: var(--basic-black);
+}
+
+.site-navigation {
+    list-style: none;
+}
+.site-navigation-current a:not([href]) {
+    background-color: var(--special-red);
+  }
+
+  /* User navigation */
+  
+  .site-navigation a,
+  .user-navigation a {
+    color: var(--basic-black);
+  }
+
+.site-navigation a:hover,
+.site-navigation a:focus,
+.user-navigation a:hover,
+.user-navigation a:focus {
+  color: var(--special-red);
+}
+
+.show-card {
+   list-style: none; 
+
+}
+
+.show-title {
+    font-weight: 500;
+    font-size: 55px;
+    line-height: 55px;
+}
+
+.show-button{
+    /* /* position: absolute; */
+    /* width: 240px;
+    height: 50px;  */
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 18px;
+    text-align: center;
+    vertical-align: middle;
+    color: var(--basick-white);
+    background-color: var(--special-red);
+}
+
+.show-card a:hover,
+.show-card a:focus {
+    background-color: var(--special-two-red);
+}
+
+/* Main */
+
+.service-container {
+    list-style: none;
+}
+
+.service-title {
+    font-weight: 700;
+    font-size: 25px;
+    line-height: 30px;
+}
+
+.service-button {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 18px;
+    text-align: center;
+    vertical-align: middle;
+    color: var(--basick-white);
+}
+
+.service-laptop a {
+    background-color: var(--special-red);
+}
+
+.service-laptop a:hover,
+.service-laptop a:focus {
+    background-color: var(--special-two-red);
+}
+
+.service-phone a {
+    background-color:var(--special-green);
+}
+
+.service-phone a:hover,
+.service-phone a:focus {
+    background-color: var(--special-two-green); 
+}
+
+.service-presentation a {
+    background-color: var(--special-yellow);
+}
+
+.service-presentation a:hover,
+.service-presentation a:focus {
+    background-color: var(--special-two-yellow);
+}
+
+/* About company */
+
+.about-text {
+    font-weight: 500;
+    font-size: 45px;
+    line-height: 45px;
+} 
+
+.about-title,
+.sidebar-title {
+    font-weight: 700;
+}
+
+.about-list {
+    list-style: none;
+}
+
+.sidebar-item {
+    
+    font-weight: 700;
+    font-size: 45px;
+    line-height: 64px;
+    color: var(--basic-black);
+}
+
+.box {
+    font-size: 26px;
+    line-height: 40px;
+    vertical-align: top;
+}
+
+/* Partners of the company */
+
+.partnership-list {
+    list-style: none;
+}
+
+/* Footer */
+
+.map-titel {
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 30px;
+    color: var(--basic-black);
+}
+
+.map-address {
+    font-size: 16px;
+    line-height: 18px;
+    font-weight: normal;
+    color: var(--special-white);
+}
+
+.map-button {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 18px;
+    text-transform: uppercase;
+    color: var(--basick-white);
+    background-color: var(--special-red);
+}
+
+/* Social */
+
+.social-list {
+    list-style: none;
+}
+
+.social-button {
+    background-color: var(--basic-dark-whith);
+}
+
+.social-list a:hover,
+.social-list a:focus {
+    background-color: var(--special-two-red);
+}
+
+.footer-copyright {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 36px;
+}
+
+.footer-copyright2 {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 22px;
+}
+
+/* Popua */
+
+.modal-titel {
+    font-weight: 700;
+    font-size: 45px;
+    line-height: 53px;
+    color: var(--basic-black);
+    
+}
+
+.modal-container
+.modal-container2 {
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 18px;
+    color: var(--basic-black);
+}
+
+.modal-button {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 18px;
+    text-transform: uppercase;
+    color: var(--basick-white);
+    background-color: var(--special-red);
+}
+
 
