@@ -6,7 +6,7 @@
     --basic-neutral: #C1C1C1;
     --basic-extra-white: #EEEEEE;
     --basic-dark-whithe: #E1E1E1;
-
+    --basic-background-dark:#F2F2F2;
 
     --special-red: #FB565A;
     --special-green: #00CA74;
@@ -23,6 +23,7 @@
     --special-one-green:#00BC6C;
     --special-one-yellow: #EAB534;
     --special-one-dark: #B4B9BB;
+    --special-one-extra-dark: #D5D5D5;
         /* нажатие */
     --special-two-red: #D7373B;
     --special-two-green: #00AA62;  
@@ -170,12 +171,123 @@ a {
     background-color: var(--special-two-yellow);
 }
 
+/* Catalog Main */
+
+.catalog-title {
+   font-weight: 500;
+   font-size: 55px; 
+   line-height: 55px;
+   color: var(--basic-black);
+}
+/* Catalog Price */
+
+.catalog-price {
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 30px;
+}
+
+/* Price form */
+
+.price legend {
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 30px;
+}
+
+.price ul {
+    list-style: none;
+    line-height: 20px;
+    font-weight: 400;
+    color: var(--basic-extra-dark);
+}
+ 
+.price-buttun {
+    line-height: 18px;
+    text-align: center;
+    vertical-align: middle;
+    background-color: var(--basic-extra-white);
+    border: none;
+    border-radius: 3px;
+}
+
+.price-buttun:hover,
+.price-buttun:focus {
+    background-color: var(--special-one-extra-dark);
+    box-shadow: inset 0px 3px 0px rgba(0, 1, 1, 0.1);
+}
+
+/* Breadcrumbs */
+
+.breadcrumbs {
+    list-style: none;
+}
+
+.breadcrumbs a {
+    color:var(--basic-dark);
+    text-transform: uppercase;
+}
+
+.breadcrumbs a:hover,
+.breadcrumbs a:focus {
+  text-decoration: underline;
+}
+
+.breadcrumbs-current {
+    color: var(--basic-black);
+    text-transform: uppercase;
+}
+
+  /* Template */
+
+.filter-title {
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 30px;
+}
+
+.catalog-list {
+    list-style: none;
+}
+
+.catalog-item {
+    background-color: var(--basic-background-dark);
+    border-radius: 5px;
+}
+
+.catalog-item a {
+    color: var(--basic-black);
+    font-size: 18px;
+    line-height: 30px;
+}
+
+.catalog-description {
+      color: var(--special-white);
+}
+
+.catalog-item-price {
+      font-weight: 500;
+      font-size: 16px;
+      line-height: 18px;
+      text-align: center;
+      text-transform: uppercase;
+      color: var(--basick-white);
+      background-color: var(--special-red);
+}
+
+.catalog-item-price:hover,
+.catalog-item-price:focus {
+      background-color: var(--special-two-red);
+}
+
 /* About company */
 
 .about-text {
     font-weight: 500;
     font-size: 45px;
     line-height: 45px;
+    text-transform: uppercase;
+
 } 
 
 .about-title,
@@ -207,6 +319,32 @@ a {
     list-style: none;
 }
 
+/* Pagination */
+
+.pagination-list {
+    list-style: none;
+}
+
+.pagination-item a {
+    color: var(--basic-black);
+    background-color: var(--basic-extra-white);
+    border-radius: 3px;
+}
+
+.pagination-item a:hover,
+.pagination-item a:focus,
+.pagination-item a:active {
+    background-color: var(--special-one-extra-dark);
+    box-shadow: inset 0px 3px 0px rgba(0, 1, 1, 0.1);
+}
+
+.pagination-item-current a,
+.pagination-item-current a:hover,
+.pagination-item-current a:focus,
+.pagination-item-current a:active {
+    background-color: var(--basic-extra-white);
+    ;
+}
 /* Footer */
 
 .map-titel {
