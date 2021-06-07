@@ -59,7 +59,7 @@
 /* bGloal */
 
 .page-body {
-    min-width: 1440px;
+    min-width: 1200px;
     margin: 0;
     padding: 0;
     font-family: "Roboto", Arial, sans-serif;
@@ -67,7 +67,12 @@
     line-height: 24px;
     font-weight: normal;
     color: var(--basic-extra-dark);
-    background-color: var(--basick-white);   
+    background-color: var(--basick-white);  
+    
+    min-height: 100%;
+    display: grid;
+    grid-template-rows: min-content 1fr min-content;
+    align-content: start;
 }
 
 .visually-hidden {
@@ -85,30 +90,71 @@ a {
     text-decoration: none;
   }
 
-/* img {
+img {
     max-width: 100%;
     height: auto;
-  } */
+  }
+
+
+.page {
+    height: 100%;
+}
+
+/* Main header */
+
+.main-header {
+    margin-top:49px;
+}
+
+  /* Logo */
+
+.main-header-logo {
+    /* outline: 5px solid rgba(255, 0, 0, 0.3);
+    outline-offset: -5px; */
+}
+
+.main-navigation-wrapper {
+    display: grid;
+    grid-template-columns: 1fr min-content;
+  }
+
+.adjustments {
+  display: grid;
+  width: 1157px;
+  margin: 0 auto;
+  padding: 0 10px;
+}
+
+/* Main navigation */
 
 .main-navigation {
+    display: grid;
     font-size: 16px;
     line-height: 30px;
     font-weight: 500;
     text-transform: uppercase;
     color: var(--basic-black);
+
+    grid-template-columns: 159.87px 1fr min-content;
 }
 
 .site-navigation {
+    order: 1;
     list-style: none;
+    justify-self: end;
 }
 .site-navigation-current a:not([href]) {
     background-color: var(--special-red);
   }
 
   /* User navigation */
+
+.user-navigation {
+
+}  
   
-  .site-navigation a,
-  .user-navigation a {
+.site-navigation a,
+.user-navigation a {
     color: var(--basic-black);
   }
 
@@ -119,18 +165,45 @@ a {
   color: var(--special-red);
 }
 
-.show-card {
-   list-style: none; 
+/* Slider */
 
+.slider-list {
+   list-style: none; 
 }
 
-.show-title {
+.slider-slides1 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+   
+}
+
+.slider-slides2 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+   
+}
+
+.slider-slides3{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+   
+}
+
+.slider-img {
+    order: 1;
+    justify-self: end;
+
+  }
+  
+  /* -------------- */
+
+.slider-title {
     font-weight: 500;
     font-size: 55px;
     line-height: 55px;
 }
 
-.show-button{
+.slider-link{
     /* width: 240px;
     height: 50px;  */
     font: inherit;
@@ -144,12 +217,13 @@ a {
     border: none;
 }
 
-.show-card a:hover,
-.show-card a:focus {
+.slider-list a:hover,
+.slider-list a:focus {
     background-color: var(--special-two-red);
 }
 
-/* Main */
+/* Main */ 
+
 
 .service-container {
     list-style: none;
@@ -166,8 +240,19 @@ a {
     font-size: 16px;
     line-height: 18px;
     text-align: center;
-    vertical-align: middle;
     color: var(--basick-white);
+}
+
+.test {
+    position: absolute;
+    display: block ;
+    width: 160px;
+    height: 50px;
+    border-radius: 3px;
+    padding-top: 30px;
+    text-align: center;
+    align-items: center;
+
 }
 
 .service-laptop a {
@@ -197,6 +282,16 @@ a {
     background-color: var(--special-two-yellow);
 }
 
+/* Service Grid */
+
+.service-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    margin-top: 80px;
+}
+
+/* -------------------- */
+
 /* Catalog Main */
 
 .catalog-title {
@@ -205,6 +300,45 @@ a {
    line-height: 55px;
    color: var(--basic-black);
 }
+
+/* Catalog Main Grid */
+.page-catalog {
+    display: grid;
+    grid-template-columns: 180px 1fr 1fr;
+    align-content: start;
+    outline: 5px solid rgba(255, 0, 0, 0.7);
+    outline-offset: -5px;
+  }
+
+.filters {
+    outline: 5px solid rgba(25, 0, 255, 0.7);
+    outline-offset: -5px;   
+}
+
+.filters2 {
+    outline: 5px solid rgba(0, 255, 21, 0.7);
+    outline-offset: -5px; 
+}
+
+.catalog {
+    outline: 5px solid rgba(255, 0, 242, 0.7);
+    outline-offset: -5px; 
+}
+
+.pagination {
+    outline: 5px solid rgba(238, 255, 0, 0.7);
+    outline-offset: -5px; 
+}
+
+
+  .container {
+    width: 1157px;
+    margin: 0 auto;
+    padding: 0 10px; 
+  }
+ 
+
+/* ___________________ */
 /* Catalog Price */
 
 .catalog-price {
@@ -264,6 +398,7 @@ a {
     text-transform: uppercase;
 }
 
+/* ------------ */
   /* Template */
 
 .filter-title {
@@ -338,6 +473,16 @@ a {
     line-height: 40px;
     vertical-align: top;
 }
+/* Grid about */
+.group { 
+    display: grid;
+    grid-template-columns: 1fr min-content;
+    margin-top: 121px;
+}
+
+
+
+/* ----------- */
 
 /* Partners of the company */
 
@@ -350,6 +495,16 @@ a {
 .pagination-list {
     list-style: none;
 }
+
+/* Pagination Gird */
+
+.partnership-grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    margin-top: 73px;
+}
+
+/* ----------------- */
 
 .pagination-item a {
     color: var(--basic-black);
@@ -372,6 +527,11 @@ a {
     ;
 }
 /* Footer */
+
+.main-footer {
+    /* outline: 5px solid rgba(255, 0, 0, 0.7);
+    outline-offset: -5px;  */
+}
 
 .map-titel {
     font-weight: 700;
@@ -402,20 +562,29 @@ a {
 
 .social-list {
     list-style: none;
+   
 }
 
-.social-button {
+.social-link {
     background-color: var(--basic-dark-whithe);
 }
 
-/* .social-icon { 
-    background-color: var(--special-green);
+.test2 {
+    display: block;
+    border-radius: 50%;
     width: 81px;
     height: 81px;
-    border-radius: 50%;
     text-align: center;
-    vertical-align:bottom;
-} */
+    align-items: center;
+
+}
+
+.social-list img {
+   padding-top: 30px; 
+
+}
+
+
 
 .social-list a:hover,
 .social-list a:focus {
@@ -433,6 +602,15 @@ a {
     font-size: 16px;
     line-height: 22px;
 }
+
+/* Socoal Grid */
+
+.social-group {
+    display: grid;
+    grid-template-columns: 1fr 1fr ;
+    /* Пока временно дал размер, в конце изменю */
+}
+
 
 /* Popua */
 
