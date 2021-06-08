@@ -109,17 +109,10 @@ img {
   /* Logo */
 
 .main-header-logo {
-    /* outline: 5px solid rgba(255, 0, 0, 0.3);
-    outline-offset: -5px; */
+
 }
 
-.main-navigation-wrapper {
-    display: grid;
-    grid-template-columns: 1fr min-content;
-  }
-
 .adjustments {
-  display: grid;
   width: 1157px;
   margin: 0 auto;
   padding: 0 10px;
@@ -134,24 +127,18 @@ img {
     font-weight: 500;
     text-transform: uppercase;
     color: var(--basic-black);
-
-    grid-template-columns: 159.87px 1fr min-content;
+    grid-template-columns: 160px 1fr min-content;
 }
 
 .site-navigation {
-    order: 1;
     list-style: none;
-    justify-self: end;
 }
+
 .site-navigation-current a:not([href]) {
     background-color: var(--special-red);
   }
 
   /* User navigation */
-
-.user-navigation {
-
-}  
   
 .site-navigation a,
 .user-navigation a {
@@ -197,21 +184,36 @@ img {
   
   /* -------------- */
 
-.slider-title {
+.slier-title {
     font-weight: 500;
     font-size: 55px;
     line-height: 55px;
+    text-transform: uppercase;
+    word-wrap: break-all;
+    width: 538px;
+    color: var(--basic-black);
 }
 
+.slider-description {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    color: var(--basic-extra-dark);
+    word-wrap: break-all;
+    width: 416px;
+    margin-top: 37px;
+    margin-bottom: 27px;
+  }
+
 .slider-link{
-    /* width: 240px;
-    height: 50px;  */
+    display: inline-block;
+    width: 240px;
+    padding: 16px;
     font: inherit;
     font-weight: 500;
     font-size: 16px;
     line-height: 18px;
     text-align: center;
-    vertical-align: middle;
     color: var(--basick-white);
     background-color: var(--special-red);
     border: none;
@@ -224,9 +226,14 @@ img {
 
 /* Main */ 
 
+/* Service Grid */
 
 .service-container {
     list-style: none;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    margin-top: 80px;
+    padding-left: 0;
 }
 
 .service-title {
@@ -240,20 +247,14 @@ img {
     font-size: 16px;
     line-height: 18px;
     text-align: center;
+    text-transform: uppercase;
     color: var(--basick-white);
-}
-
-.test {
-    position: absolute;
-    display: block ;
+    display: inline-block ;
     width: 160px;
-    height: 50px;
     border-radius: 3px;
-    padding-top: 30px;
-    text-align: center;
-    align-items: center;
-
+    padding: 17px;
 }
+
 
 .service-laptop a {
     background-color: var(--special-red);
@@ -281,15 +282,6 @@ img {
 .service-presentation a:focus {
     background-color: var(--special-two-yellow);
 }
-
-/* Service Grid */
-
-.service-container {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    margin-top: 80px;
-}
-
 /* -------------------- */
 
 /* Catalog Main */
@@ -299,45 +291,42 @@ img {
    font-size: 55px; 
    line-height: 55px;
    color: var(--basic-black);
+
+    text-align: center;
+    grid-column: 1 / -1;
+    margin: 0;
+    margin-bottom: 163px;
+    margin-top: 87px;
+    padding: 0;
 }
 
 /* Catalog Main Grid */
 .page-catalog {
     display: grid;
-    grid-template-columns: 180px 1fr 1fr;
+    grid-template-columns: 180px 1fr; 
     align-content: start;
-    outline: 5px solid rgba(255, 0, 0, 0.7);
-    outline-offset: -5px;
   }
 
 .filters {
-    outline: 5px solid rgba(25, 0, 255, 0.7);
-    outline-offset: -5px;   
+    margin-top: 48px;
 }
 
 .filters2 {
-    outline: 5px solid rgba(0, 255, 21, 0.7);
-    outline-offset: -5px; 
+    grid-column: 1 / -1;
+    margin-bottom: 48px;
 }
 
 .catalog {
-    outline: 5px solid rgba(255, 0, 242, 0.7);
-    outline-offset: -5px; 
+    margin-left: 60px;
+    margin-top: 48px;
 }
 
-.pagination {
-    outline: 5px solid rgba(238, 255, 0, 0.7);
-    outline-offset: -5px; 
-}
-
-
-  .container {
+.container {
     width: 1157px;
     margin: 0 auto;
     padding: 0 10px; 
   }
  
-
 /* ___________________ */
 /* Catalog Price */
 
@@ -363,12 +352,18 @@ img {
 }
  
 .price-buttun {
+    font-weight: 500;
+    font-size: 16px;
     line-height: 18px;
     text-align: center;
-    vertical-align: middle;
     background-color: var(--basic-extra-white);
     border: none;
     border-radius: 3px;
+    display: inline-block;
+    width: 260px;
+    padding: 17px;
+    text-transform: uppercase;
+    color: var(--basic-black);
 }
 
 .price-buttun:hover,
@@ -434,6 +429,10 @@ img {
       text-transform: uppercase;
       color: var(--basick-white);
       background-color: var(--special-red);
+      display: inline-block;
+      width: 200px;
+      padding: 17px;
+      border-radius: 3px;
 }
 
 .catalog-item-price:hover,
@@ -441,15 +440,35 @@ img {
       background-color: var(--special-two-red);
 }
 
-/* About company */
+/* About company / Grid*/
+
+.about {
+    display: grid;
+    grid-template-columns: 1fr min-content;
+    margin-top: 121px;
+}
 
 .about-text {
     font-weight: 500;
     font-size: 45px;
     line-height: 45px;
-    text-transform: uppercase;
-
+    word-wrap: break-all;
+    width: 651px;
 } 
+
+.about-text1 {
+    word-wrap: break-all;
+    width: 645px;
+    margin-top: 32px;
+}
+
+.about-title {
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 24px;
+    text-transform: uppercase;
+    margin-top: 40px;
+}
 
 .about-title,
 .sidebar-title {
@@ -458,10 +477,16 @@ img {
 
 .about-list {
     list-style: none;
+    margin-top: 23px;
+}
+/* -------------- */
+
+.sidebar-title {
+    margin-top: 37px;
+    margin-top: 31px;
 }
 
 .sidebar-item {
-    
     font-weight: 700;
     font-size: 45px;
     line-height: 64px;
@@ -473,16 +498,6 @@ img {
     line-height: 40px;
     vertical-align: top;
 }
-/* Grid about */
-.group { 
-    display: grid;
-    grid-template-columns: 1fr min-content;
-    margin-top: 121px;
-}
-
-
-
-/* ----------- */
 
 /* Partners of the company */
 
@@ -498,7 +513,7 @@ img {
 
 /* Pagination Gird */
 
-.partnership-grid{
+.partnership-list {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     margin-top: 73px;
@@ -556,6 +571,10 @@ img {
     vertical-align: middle;
     color: var(--basick-white);
     background-color: var(--special-red);
+    display: inline-block;
+    padding: 17px;
+    width: 219px;
+    border-radius: 3px;
 }
 
 /* Social */
@@ -567,23 +586,11 @@ img {
 
 .social-link {
     background-color: var(--basic-dark-whithe);
-}
-
-.test2 {
-    display: block;
+    display: inline-block;
     border-radius: 50%;
-    width: 81px;
-    height: 81px;
+    padding: 30px;
     text-align: center;
-    align-items: center;
-
 }
-
-.social-list img {
-   padding-top: 30px; 
-
-}
-
 
 
 .social-list a:hover,
@@ -605,7 +612,7 @@ img {
 
 /* Socoal Grid */
 
-.social-group {
+.footer-social {
     display: grid;
     grid-template-columns: 1fr 1fr ;
     /* Пока временно дал размер, в конце изменю */
@@ -614,7 +621,7 @@ img {
 
 /* Popua */
 
-.modal-titel {
+.modal-title {
     font-weight: 700;
     font-size: 45px;
     line-height: 53px;
@@ -660,6 +667,10 @@ img {
     color: var(--basick-white);
     background-color: var(--special-red);
     border: none;
+    display: inline-block;
+    padding: 16px;
+    width: 259px;
+    border-radius: 3px;
 }
 
 

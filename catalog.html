@@ -17,34 +17,48 @@
             <a class="main-header-logo" href="index.html">
                   <img src="img/nerds-logo.svg" width="160" height="65" alt="Логотип Интернет магазин «Nerds»">
             </a>
-          <div class="main-navigation-wrapper">
-            <div class="main-container">
               <ul class="site-navigation">
                 <li><a href="index.html">Студия</a></li>
                 <li><a href="#">Клиенты</a></li>
                 <li><a href="#">Магазин</a></li>
                 <li><a href="#">Контакты</a></li>
               </ul>
-            </div>
             <div class="user-navigation">
                 <a class="button bag">
                   <img src="img/cart-icon.svg" width="15" height="15" alt="Корзина">
                   Корзина
                 </a>
             </div>
-          </div>
       </nav>
       </div>
     </header>
     
-    <main class="page-catalog container">
-      <div class="adjustments">
+    <main class="page-catalog container">  
         <h1 class="visually-hidden">Интернет магазин «Nerds»</h1>
-        <div class="catalog-title"><h2>Магазин готовых шаблонов</h2></div>
-        <div class="group">
+        <section class="catalog-title title-background"><h2>Магазин готовых шаблонов</h2></section>
+        <section class="filters2">
+          <h2 class="visually-hidden">Сортировать по цене</h2>
+          <h3 class="catalog-price">Стоимость:</h3>
+          <h3 class="filter-title">Сортировать:</h3>
+          <ul class="breadcrumbs">
+            <li class="breadcrumbs-current">По цене</li>
+            <li><a>По типу</a></li>
+            <li><a>По названию</a></li>
+          </ul>
+           <!-- Temporary button labels -->
+          <div class="icon-container">
+            <a  class="icon-current">
+              <img src="img/icon-down-dir.svg" width="11" height="10" alt="кнопка вниз">
+            </a>
+            <a class="icon-up">
+              <img src="img/icon-up-dir.svg" width="11" height="10" alt="кнопка вверх">
+            </a>
+            </div>
+        </section>
+
         <section class="filters">
             <h2 class="visually-hidden">Каталог</h2>
-            <h3 class="catalog-price">Стоимость:</h3>
+            
               <form class="price" action="https://echo.htmlacademy.ru/courses" method="post">
                 <fieldset class="price-controls">
                   <legend class="visually-hidden">Цена</legend>
@@ -99,26 +113,6 @@
                 <button class="buttun price-buttun">ПОКАЗАТЬ</button>
               </form>
         </section>
-</div>
-<div class="group2">
-        <section class="filters2">
-          <h2 class="visually-hidden">Сортировать по цене</h2>
-          <h3 class="filter-title">Сортировать:</h3>
-          <ul class="breadcrumbs">
-            <li class="breadcrumbs-current">По цене</li>
-            <li><a>По типу</a></li>
-            <li><a>По названию</a></li>
-          </ul>
-           <!-- Temporary button labels -->
-          <div class="icon-container">
-            <a  class="icon-current">
-              <img src="img/icon-down-dir.svg" width="11" height="10" alt="кнопка вниз">
-            </a>
-            <a class="icon-up">
-              <img src="img/icon-up-dir.svg" width="11" height="10" alt="кнопка вверх">
-            </a>
-            </div>
-        </section>
        <!-- Catalog -->
        <section class="catalog">
         <h2 class="visually-hidden">Каталог шаблонов</h2>
@@ -172,19 +166,14 @@
             <p class="catalog-item-price">900 ₽</p>
           </li>
         </ul>
+        <h2 class="visually-hidden">Страницы для шаблонов</h2>
+        <ul class="pagination-list">
+            <li class="pagination-item pagination-item-current"><a>1</a></li>
+            <li class="pagination-item"><a href="#">2</a></li>
+            <li class="pagination-item"><a href="#">3</a></li>
+            <li class="pagination-item"><a href="#">Следующая</a></li>
+        </ul>
        </section>
-</div>
-       <section class="pagination">
-           <h2 class="visually-hidden">Страницы для шаблонов</h2>
-           <ul class="pagination-list">
-               <li class="pagination-item pagination-item-current"><a>1</a></li>
-               <li class="pagination-item"><a href="#">2</a></li>
-               <li class="pagination-item"><a href="#">3</a></li>
-               <li class="pagination-item"><a href="#">Следующая</a></li>
-           </ul>
-       </section>
-       </div>
-       <!-- adjustments -->
     </main>
              <!-- Footer -->
     <footer class="main-footer">
