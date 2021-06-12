@@ -59,7 +59,7 @@
 /* bGloal */
 
 .page-body {
-    min-width: 1200px;
+    min-width: 1440px;
     margin: 0;
     padding: 0;
     font-family: "Roboto", Arial, sans-serif;
@@ -103,47 +103,68 @@ img {
 /* Main header */
 
 .main-header {
-    margin-top:49px;
+    background-color: var(--basic-extra-white);
 }
 
   /* Logo */
 
 .main-header-logo {
-
+    width: 160px;
 }
 
 .adjustments {
-  width: 1157px;
-  margin: 0 auto;
-  padding: 0 10px;
+    width: 1157px;
+    margin: 0 auto;
+    padding: 0 10px;
 }
 
 /* Main navigation */
 
 .main-navigation {
-    display: grid;
+    /* display: grid; */
     font-size: 16px;
     line-height: 30px;
     font-weight: 500;
     text-transform: uppercase;
     color: var(--basic-black);
-    grid-template-columns: 160px 1fr min-content;
+    /* grid-template-columns: 160px 1fr min-content; */
+    margin-top:49px;
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+
 }
 
 .site-navigation {
     list-style: none;
+    width: 437px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+
 }
 
 .site-navigation-current a:not([href]) {
     background-color: var(--special-red);
-  }
+}
 
   /* User navigation */
+
+.user-navigation {
+    width: 115px;
+}
+
+.user-navigation img {
+    margin-right: 20px;
+}
+
   
 .site-navigation a,
 .user-navigation a {
     color: var(--basic-black);
-  }
+}
 
 .site-navigation a:hover,
 .site-navigation a:focus,
@@ -152,34 +173,28 @@ img {
   color: var(--special-red);
 }
 
+.features {
+    background-color: var(--basic-extra-white);   
+}
+
 /* Slider */
 
 .slider-list {
    list-style: none; 
+   margin-top: 0;
 }
 
-.slider-slides1 {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
+.slider-slides {
+    /* display: grid;
+    grid-template-columns: 1fr 1fr; */
+    display: flex;
    
 }
 
-.slider-slides2 {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-   
-}
-
-.slider-slides3{
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-   
-}
 
 .slider-img {
     order: 1;
     justify-self: end;
-
   }
   
   /* -------------- */
@@ -217,6 +232,7 @@ img {
     color: var(--basick-white);
     background-color: var(--special-red);
     border: none;
+    margin-bottom: 80px;
 }
 
 .slider-list a:hover,
@@ -234,12 +250,19 @@ img {
     grid-template-columns: 1fr 1fr 1fr;
     margin-top: 80px;
     padding-left: 0;
+    margin-bottom: 80px;
+   
 }
 
 .service-title {
     font-weight: 700;
     font-size: 25px;
     line-height: 30px;
+}
+
+.service-description {
+    width: 260px;
+    word-wrap: break-all;
 }
 
 .service-button {
@@ -253,6 +276,7 @@ img {
     width: 160px;
     border-radius: 3px;
     padding: 17px;
+   
 }
 
 
@@ -285,19 +309,20 @@ img {
 /* -------------------- */
 
 /* Catalog Main */
+.title-background {
+    grid-column: 1 / -1;
+    background-color: var(--basic-extra-white);
+}
 
 .catalog-title {
-   font-weight: 500;
-   font-size: 55px; 
-   line-height: 55px;
-   color: var(--basic-black);
 
-    text-align: center;
-    grid-column: 1 / -1;
-    margin: 0;
-    margin-bottom: 163px;
+    font-weight: 500;
+    font-size: 55px; 
+    line-height: 55px;
+    color: var(--basic-black);
     margin-top: 87px;
-    padding: 0;
+    text-align: center;
+    margin-bottom: 108px;
 }
 
 /* Catalog Main Grid */
@@ -308,24 +333,38 @@ img {
   }
 
 .filters {
-    margin-top: 48px;
+    grid-column: 1 / -1;
+    margin-top: 55px;
+    margin-bottom: 48px;
+    display: flex;
+    justify-content: space-around;
 }
 
 .filters2 {
-    grid-column: 1 / -1;
+    margin-top: 48px;
     margin-bottom: 48px;
+    
 }
+
+.price {
+    width: 260px;
+   
+}
+
+.price fieldset  {
+    padding: 0;
+    margin: 0;
+    border: none;
+}
+
 
 .catalog {
-    margin-left: 60px;
+    margin-left: 141px;
     margin-top: 48px;
+    margin-bottom: 55px;
 }
 
-.container {
-    width: 1157px;
-    margin: 0 auto;
-    padding: 0 10px; 
-  }
+
  
 /* ___________________ */
 /* Catalog Price */
@@ -344,12 +383,27 @@ img {
     line-height: 30px;
 }
 
+/* .price legend:first-child {
+    margin-top: 54px;
+} */
+
+.filler2 {
+    margin-top:54px;
+}
+
 .price ul {
     list-style: none;
     line-height: 20px;
     font-weight: 400;
     color: var(--basic-extra-dark);
+    margin: 0 0;
 }
+
+.price-option {
+    margin-top: 20px;
+}
+
+
  
 .price-buttun {
     font-weight: 500;
@@ -364,6 +418,7 @@ img {
     padding: 17px;
     text-transform: uppercase;
     color: var(--basic-black);
+    margin-top: 48px;
 }
 
 .price-buttun:hover,
@@ -376,6 +431,14 @@ img {
 
 .breadcrumbs {
     list-style: none;
+    display: flex;
+    justify-content: space-around;
+   
+}
+
+.breadcrumbs li {
+    margin-right: 26px;
+    margin-top: 12px;
 }
 
 .breadcrumbs a {
@@ -393,6 +456,10 @@ img {
     text-transform: uppercase;
 }
 
+.icon-container {
+    margin-top: 17px;
+   
+}
 /* ------------ */
   /* Template */
 
@@ -403,12 +470,31 @@ img {
 }
 
 .catalog-list {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0;
+    margin: 0;
+    margin-bottom: 55px;
     list-style: none;
 }
 
 .catalog-item {
     background-color: var(--basic-background-dark);
     border-radius: 5px;
+    width: 359px;
+    min-height: 578px;
+    margin-right: 42px;
+    margin-bottom: 32px;
+    background-color: var(--basic-extra-light);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    
+}
+
+.catalog-item img {
+    width: 359px;
+    height: 578px;
+    margin: 0;
 }
 
 .catalog-item a {
@@ -443,9 +529,16 @@ img {
 /* About company / Grid*/
 
 .about {
-    display: grid;
-    grid-template-columns: 1fr min-content;
+    /* display: grid;
+    grid-template-columns: 1fr min-content; */
+    display: flex;
+    justify-content: space-between;
     margin-top: 121px;
+    margin-bottom: 73px;
+}
+
+.about-container {
+    width: 651px;
 }
 
 .about-text {
@@ -454,6 +547,7 @@ img {
     line-height: 45px;
     word-wrap: break-all;
     width: 651px;
+   
 } 
 
 .about-text1 {
@@ -480,10 +574,16 @@ img {
     margin-top: 23px;
 }
 /* -------------- */
+.sidebar {
+    width: 360px;
+    
+}
+
 
 .sidebar-title {
     margin-top: 37px;
-    margin-top: 31px;
+    margin-bottom: 31px;
+    text-align: center;
 }
 
 .sidebar-item {
@@ -514,9 +614,11 @@ img {
 /* Pagination Gird */
 
 .partnership-list {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
+    display: flex;
+    justify-content: space-around;
     margin-top: 73px;
+    margin-bottom: 80px;
+
 }
 
 /* ----------------- */
@@ -548,7 +650,22 @@ img {
     outline-offset: -5px;  */
 }
 
+.address {
+    display: flex;
+    flex-direction: column;
+     /* position: absolute; */
+    width: 319px;
+    height: 308px;
+    background-color: var(--basick-white);
+   
+
+}
+
 .map-titel {
+    margin: 0;
+    margin-top: 49px;
+    margin-bottom: 23px;
+    width: 193px;
     font-weight: 700;
     font-size: 18px;
     line-height: 30px;
@@ -556,6 +673,9 @@ img {
 }
 
 .map-address {
+    margin: 0;
+    margin-bottom: 38px;
+    width: 230px;
     font-size: 16px;
     line-height: 18px;
     font-weight: normal;
@@ -575,6 +695,7 @@ img {
     padding: 17px;
     width: 219px;
     border-radius: 3px;
+    margin-bottom: 47px;
 }
 
 /* Social */
@@ -583,6 +704,8 @@ img {
     list-style: none;
    
 }
+
+
 
 .social-link {
     background-color: var(--basic-dark-whithe);
@@ -613,19 +736,32 @@ img {
 /* Socoal Grid */
 
 .footer-social {
-    display: grid;
-    grid-template-columns: 1fr 1fr ;
-    /* Пока временно дал размер, в конце изменю */
+    display: flex;
+    justify-content: space-around;
 }
 
 
 /* Popua */
+
+.modal {
+    display: flex;
+    flex-direction: column;
+    width: 960px;
+    height: 590px;
+    background-color: var(--basick-white);
+    box-shadow: 0px 20px 40px rgba(0, 0, 0, 0.4);
+    margin: 0 auto;
+}
 
 .modal-title {
     font-weight: 700;
     font-size: 45px;
     line-height: 53px;
     color: var(--basic-black);
+    margin-top: 63px;
+    margin-bottom: 37px;
+    margin-left: 100px;
+    margin-right: 549px;
     
 }
 
@@ -671,6 +807,28 @@ img {
     padding: 16px;
     width: 259px;
     border-radius: 3px;
+}
+
+.modal-form {
+    display: flex;
+    flex-direction: column;
+    width: 761px;
+    height: 353px;
+    margin-bottom: 47px;
+    margin: 0 auto;
+}
+
+.modal-container {
+    display: flex;
+    justify-content: space-around;
+}
+
+.modal-container2 {
+    display: flex;
+    width: 760px;
+    height: 133px;
+    margin-top: 40px;
+    margin-bottom: 53px;
 }
 
 
