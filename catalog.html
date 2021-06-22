@@ -23,8 +23,7 @@
                 <li><a href="#">Контакты</a></li>
               </ul>
             <div class="user-navigation">
-                <a class="button bag">
-                  <img src="img/cart-icon.svg" width="15" height="15" alt="Корзина">
+                <a class="button bag" href="#" aria-label="Корзина">
                   Корзина
                 </a>
             </div>
@@ -46,68 +45,76 @@
             <li><a>По типу</a></li>
             <li><a>По названию</a></li>
           </ul>
-           <!-- Temporary button labels -->
           <div class="icon-container">
-            <a  class="icon-current">
-              <img src="img/icon-down-dir.svg" width="11" height="10" alt="кнопка вниз">
-            </a>
-            <a class="icon-up">
-              <img src="img/icon-up-dir.svg" width="11" height="10" alt="кнопка вверх">
-            </a>
+            <div>
+            <a  class="icon-current" aria-label="кнопка вниз"></a>
+            <a class="icon-up-dir" aria-label="кнопка вверх"></a>
+            </div>
             </div>
         </section>
-
         <section class="filters2">
             <h2 class="visually-hidden">Каталог</h2>
-            
               <form class="price" action="https://echo.htmlacademy.ru/courses" method="post">
-                <fieldset class="price-controls">
-                  <legend class="visually-hidden filler1">Цена</legend>
-                  <label for="number">от</label>
-                  <input type="number" min="0" max="15000" id="number"><br><br>
-                  <label for="number-1">до</label>
-                  <input type="number" min="0" max="15000" id="number-1">
-                </fieldset>
+                <fieldset class="filter-item">
+                  <legend class="visually-hidden">Стоимость:</legend>
+                  <div class="range-filter">
+                    <div class="range-controls">
+                      <div class="scale">
+                        <div class="bar"></div>
+                      </div>
+                      <div class="toggle toggle-min"></div>
+                      <div class="toggle toggle-max"></div>
+                    </div>
+                    <div class="price-controls">
+                      <label class="min-price">
+                        от <input type="text" name="min-price" value="0">
+                      </label>
+                      <label class="max-price">
+                        до <input type="text" name="max-price" value="15000">
+                      </label>
+                    </div>
+                  </div>
+              </fieldset>
                 <fieldset>
                   <legend class="filler2">Сетка:</legend>
-                  <ul >
+                  <ul class="filler2-list">
                     <li class="price-option price-radiobox">
+                    <input class="price-input-radio visually-hidden" type="radio" name="radiobox" id="radiobox1" checked>
                     <label for="radiobox1">Адаптивная</label>
-                    <input class="price-input-radio" type="radio" name="radiobox" id="radiobox1" checked><br> 
                     </li>
                     <li class="price-option price-radiobox">
+                    <input class="price-input-radio visually-hidden" type="radio" name="radiobox" id="radiobox2">
                     <label for="radiobox2">Фиксированная</label>
-                    <input class="price-input-radio" type="radio" name="radiobox" id="radiobox2"><br>
                     </li>
                     <li class="price-option price-radiobox">
-                    <label for="radiobox3">Резиновая</label>
-                    <input class="price-input-radio" type="radio" name="radiobox" id="radiobox3"><br><br>
+                    <input class="price-input-radio visually-hidden" type="radio" name="radiobox" id="radiobox3">
+                     <label for="radiobox3">Резиновая</label>
                     </li>
                   </ul>
                 </fieldset>
 
                 <fieldset>
                   <legend class="filler3">Особенности:</legend>
-                  <ul>
+                  <ul class="price-option-list">
                     <li class="price-option price-checkbox">
+                      <input class="price-input-checkbox visually-hidden" type="checkbox" name="checkbox" id="checkbox1" checked>
                       <label for="checkbox1">Слайдер</label>
-                      <input class="price-input-checkbox" type="checkbox" name="checkbox" id="checkbox1" checked><br>
                     </li>
                     <li class="price-option price-checkbox">
-                      <label for="checkbox2">Блок преимуществ</label>
-                      <input class="price-input-checkbox" type="checkbox" name="checkbox" id="checkbox2"><br>
+                     <input class="price-input-checkbox visually-hidden" type="checkbox" name="checkbox" id="checkbox2">
+                     <label for="checkbox2">Блок преимуществ</label>
                     </li>
                     <li class="price-option price-checkbox">
+                      <input class="price-input-checkbox visually-hidden" type="checkbox" name="checkbox" id="checkbox3" checked>
                       <label for="checkbox3">Новости</label>
-                      <input class="price-input-checkbox" type="checkbox" name="checkbox" id="checkbox3" checked><br>
                     </li>
                     <li class="price-option price-checkbox">
+                      <input class="price-input-checkbox visually-hidden" type="checkbox" name="checkbox" id="checkbox4">
                       <label for="checkbox4">Галерея</label>
-                      <input class="price-input-checkbox" type="checkbox" name="checkbox" id="checkbox4"><br>
                     </li>
                     <li class="price-option price-checkbox">
+                      <input class="price-input-checkbox visually-hidden" type="checkbox" name="checkbox" id="checkbox5">
                       <label for="checkbox5">Корзина</label>
-                      <input class="price-input-checkbox" type="checkbox" name="checkbox" id="checkbox5"><br>
                     </li>
                   </ul>
                 </fieldset>
@@ -119,52 +126,70 @@
         <h2 class="visually-hidden">Каталог шаблонов</h2>
         <ul class="catalog-list">
           <li class="catalog-item">
-            <a href="#">
-              <h3 class="catalog-item-title">Sedona</h3>
-            </a>
-            <p><img src="img/catalog/sedona.jpg" width="358" height="578" alt="Шаблон седона"></p>
-            <p class="catalog-description">Информационный сайт <br> для туристов</p>
-            <p class="catalog-item-price">9 900 ₽</p>
+            <h3 class="visually-hidden">Поисковый сайт сидон</h3>
+            <img src="img/catalog/sedona.jpg" width="358" height="578" alt="Шаблон седона">
+            <div class="overlay">
+              <a href="#">
+                <h4 class="catalog-item-title">Sedona</h4>
+              </a>
+              <p class="catalog-description">Информационный сайт <br> для туристов</p>
+              <p class="catalog-item-price">9 900 ₽</p>
+            </div>
           </li>
           <li class="catalog-item">
-            <a href="#">
-              <h3 class="catalog-item-title">Pink App</h3>
-            </a>
+            <h3 class="visually-hidden">Сайт мобильных приложении пинк</h3>
             <img src="img/catalog/pink.jpg" width="358" height="578" alt="Шаблон Pink App">
-            <p class="catalog-description">Продуктовый лендинг приложения для iOS и Android</p>
-            <p class="catalog-item-price">900 ₽</p>
+            <div class="overlay">
+              <a href="#">
+                <h4 class="catalog-item-title">Pink App</h4>
+              </a>
+              <p class="catalog-description">Продуктовый лендинг приложения для iOS и Android</p>
+              <p class="catalog-item-price">900 ₽</p>
+            </div>
           </li>
           <li class="catalog-item">
-            <a href="#">
-              <h3 class="catalog-item-title">Barbershop</h3>
-            </a>
+            <h3 class="visually-hidden">Сайт барбешопа Бородинский</h3>
             <img src="img/catalog/barbershop.jpg" width="358" height="578" alt="Шаблон Barbershop">
-            <p class="catalog-description">Сайт салона красоты. Для мужчин, да.</p>
-            <p class="catalog-item-price">900 ₽</p>
+            <div class="overlay">
+              <a href="#">
+                <h4 class="catalog-item-title">Barbershop</h4>
+              </a>
+              <p class="catalog-description">Сайт салона красоты.<br> Для мужчин, да.</p>
+              <p class="catalog-item-price">900 ₽</p>
+            </div>
           </li>
           <li class="catalog-item">
-            <a href="#">
-              <h3 class="catalog-item-title">MISHKA</h3>
-            </a>
-            <img src="img/catalog/mishka.jpg" width="358" height="578" alt="Шаблон MISHKA">
-            <p class="catalog-description">Интернет-магазин вязаных игрушек</p>
-            <p class="catalog-item-price">900 ₽</p>
+            <h3 class="visually-hidden">Сайт вязаных игрушек мишка</h3>
+            <img src="img/catalog/mishka.jpg" width="358" heightм="578" alt="Шаблон MISHKA">
+            <div class="overlay">
+              <a href="#">
+                <h4 class="catalog-item-title">MISHKA</h4>
+              </a>
+              <p class="catalog-description">Интернет-магазин <br> вязаных игрушек</p>
+              <p class="catalog-item-price">900 ₽</p>
+            </div>
           </li>
           <li class="catalog-item">
-            <a href="#">
-              <h3 class="catalog-item-title">A Plus</h3>
-            </a>
+            <h3 class="visually-hidden">Интерактивный сайт а плюс</h3>
             <img src="img/catalog/aplus.jpg" width="358" height="578" alt="Шаблон A Plus">
-            <p class="catalog-description">Лендинг курсов повышения квалификации</p>
-            <p class="catalog-item-price">900 ₽</p>
+            <div class="overlay">
+              <a href="#">
+                <h4 class="catalog-item-title">A Plus</h4>
+              </a>
+              <p class="catalog-description">Лендинг курсов повышения квалификации</p>
+              <p class="catalog-item-price">900 ₽</p>
+            </div>
           </li>
           <li class="catalog-item">
-            <a href="#">
-              <h3 class="catalog-item-title">КВАСТ</h3>
-            </a>
+            <h3 class="visually-hidden">Сайт производителя кваса</h3> 
             <img src="img/catalog/kvast.jpg" width="358" height="578" alt="Шаблон КВАСТ">
-            <p class="catalog-description">Промо-сайт производителя крафтового кваса</p>
-            <p class="catalog-item-price">900 ₽</p>
+            <div class="overlay">
+              <a href="#">
+                <h4 class="catalog-item-title">КВАСТ</h4>
+              </a>
+              <p class="catalog-description">Промо-сайт производителя крафтового кваса</p>
+              <p class="catalog-item-price">900 ₽</p>
+            </div>
           </li>
         </ul>
         <h2 class="visually-hidden">Страницы для шаблонов</h2>
@@ -180,17 +205,17 @@
              <!-- Footer -->
     <footer class="main-footer ">
       <article class="map">
-          <h2 class="visually-hidden">Карта маршрута</h2>
-          <!-- Здесь будет карта -->
-          <img src="img/map.jpg" width="100%" height="416" alt="Карта">
-          <div class="address">
-            <h3 class="map-titel">NERDS DESING STUDIO</h3>
-            <div class="map-address">
-              <p >наб. Реки Карповки, <br> 5 лит П, Санкт-Петербург</p>
-              <p> +7 800 555-86-28</p>
-            </div>
-            <a class="button map-button">НАПИШИТЕ НАМ</a>
-          </div>
+        <h2 class="visually-hidden">Карта маршрута</h2>
+        <!-- Здесь будет карта -->
+         <img src="img/map.jpg" width="1440px" height="416" alt="Карта">
+         <div class="address-wrapper">
+        <div class="address">
+         <h3 class="map-titel">NЁRDS DESIGN STUDIO</h3>
+           <p >наб. Реки Карповки, <br> 5 лит П, Санкт-Петербург</p>
+           <p> +7 800 555-86-28</p>
+         <a class="button map-button">НАПИШИТЕ НАМ</a>
+       </div>
+       </div>
       </article>
       <!-- Social -->
       <section class="footer-social">
