@@ -19,7 +19,7 @@
               <ul class="site-navigation">
                 <li><a href="index.html">Студия</a></li>
                 <li><a href="#">Клиенты</a></li>
-                <li><a href="#">Магазин</a></li>
+                <li class="site-navigation-active"><a href="#">Магазин</a></li>
                 <li><a href="#">Контакты</a></li>
               </ul>
             <div class="user-navigation">
@@ -35,28 +35,12 @@
         <section class="title-background">
           <h2 class="catalog-title">Магазин готовых шаблонов</h2>
         </section>
-        <div class="catalog-adjustments">
-        <section class="filters">
-          <h2 class="visually-hidden">Сортировать по цене</h2>
-          <h3 class="catalog-price">Стоимость:</h3>
-          <h3 class="filter-title">Сортировать:</h3>
-          <ul class="breadcrumbs">
-            <li class="breadcrumbs-current">По цене</li>
-            <li><a>По типу</a></li>
-            <li><a>По названию</a></li>
-          </ul>
-          <div class="icon-container">
-            <div>
-            <a  class="icon-current" aria-label="кнопка вниз"></a>
-            <a class="icon-up-dir" aria-label="кнопка вверх"></a>
-            </div>
-            </div>
-        </section>
-        <section class="filters2">
+        <div class="page-catalog-inner">
+        <section class="catalog-filters1">
             <h2 class="visually-hidden">Каталог</h2>
               <form class="price" action="https://echo.htmlacademy.ru/courses" method="post">
-                <fieldset class="filter-item">
-                  <legend class="visually-hidden">Стоимость:</legend>
+                <fieldset class="filter-fieldset">
+                  <legend class="catalog-price">Стоимость:</legend>
                   <div class="range-filter">
                     <div class="range-controls">
                       <div class="scale">
@@ -75,9 +59,9 @@
                     </div>
                   </div>
               </fieldset>
-                <fieldset>
-                  <legend class="filler2">Сетка:</legend>
-                  <ul class="filler2-list">
+                <fieldset class="filter-fieldset2">
+                  <legend class="price-option-legend">Сетка:</legend>
+                  <ul class="price-option-list">
                     <li class="price-option price-radiobox">
                     <input class="price-input-radio visually-hidden" type="radio" name="radiobox" id="radiobox1" checked>
                     <label for="radiobox1">Адаптивная</label>
@@ -93,9 +77,9 @@
                   </ul>
                 </fieldset>
 
-                <fieldset>
-                  <legend class="filler3">Особенности:</legend>
-                  <ul class="price-option-list">
+                <fieldset class="filter-fieldset3">
+                  <legend class="price-option-legend3">Особенности:</legend>
+                  <ul class="price-option-list2">
                     <li class="price-option price-checkbox">
                       <input class="price-input-checkbox visually-hidden" type="checkbox" name="checkbox" id="checkbox1" checked>
                       <label for="checkbox1">Слайдер</label>
@@ -122,11 +106,38 @@
               </form>
         </section>
        <!-- Catalog -->
+       <div class="catalog-wrapper">
+        <section class="filters2">
+          <h2 class="visually-hidden">Сортировать по цене</h2>
+          <h3 class="filter2-title">Сортировать:</h3>
+          <ul class="breadcrumbs">
+            <li class="breadcrumbs-current"  href="#">По цене</li>
+            <li><a  href="#">По типу</a></li>
+            <li><a  href="#">По названию</a></li>
+          </ul>
+          <div class="icon-container">
+            <div>
+            <a  class="icon-current" href="#" aria-label="кнопка вниз">
+              <svg width="11" height="10" viewBox="0 0 11 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M5.5 10L0 0H11" fill="#231F20"/>
+                </svg>
+            </a>
+            <a class="icon-up-dir"  href="#" aria-label="кнопка вверх">
+              <svg width="11" height="10" viewBox="0 0 11 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M5.5 0L0 10H11L5.5 0Z" fill="#231F20"/>
+                </svg>
+            </a>
+            </div>
+            </div>
+        </section>
        <section class="catalog">
         <h2 class="visually-hidden">Каталог шаблонов</h2>
         <ul class="catalog-list">
           <li class="catalog-item">
             <h3 class="visually-hidden">Поисковый сайт сидон</h3>
+            <svg class="catalog-item-box" width="360" height="40" viewBox="0 0 360 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path fill-rule="evenodd" clip-rule="evenodd" d="M4 0H356C358.2 0 360 1.8 360 4V40H0V4C0 1.8 1.8 0 4 0ZM16.9288 23.5C18.1792 25.6658 20.4901 27 22.991 27C26.857 27 29.991 23.866 29.991 20C29.991 16.134 26.857 13 22.991 13C20.4901 13 18.1792 14.3342 16.9288 16.5C15.6784 18.6658 15.6784 21.3342 16.9288 23.5ZM46.002 27C43.5011 27 41.1902 25.6658 39.9398 23.5C38.6893 21.3342 38.6893 18.6658 39.9398 16.5C41.1902 14.3342 43.5011 13 46.002 13C49.8679 13 53.002 16.134 53.002 20C53.002 23.866 49.8679 27 46.002 27ZM62.9508 23.5C64.2012 25.6658 66.5121 27 69.0129 27C72.8789 27 76.0129 23.866 76.0129 20C76.0129 16.134 72.8789 13 69.0129 13C66.5121 13 64.2012 14.3342 62.9508 16.5C61.7003 18.6658 61.7003 21.3342 62.9508 23.5Z" fill="#4D4D4D"/>
+              </svg>
             <img src="img/catalog/sedona.jpg" width="358" height="578" alt="Шаблон седона">
             <div class="overlay">
               <a href="#">
@@ -138,57 +149,72 @@
           </li>
           <li class="catalog-item">
             <h3 class="visually-hidden">Сайт мобильных приложении пинк</h3>
+            <svg class="catalog-item-box" width="360" height="40" viewBox="0 0 360 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path fill-rule="evenodd" clip-rule="evenodd" d="M4 0H356C358.2 0 360 1.8 360 4V40H0V4C0 1.8 1.8 0 4 0ZM16.9288 23.5C18.1792 25.6658 20.4901 27 22.991 27C26.857 27 29.991 23.866 29.991 20C29.991 16.134 26.857 13 22.991 13C20.4901 13 18.1792 14.3342 16.9288 16.5C15.6784 18.6658 15.6784 21.3342 16.9288 23.5ZM46.002 27C43.5011 27 41.1902 25.6658 39.9398 23.5C38.6893 21.3342 38.6893 18.6658 39.9398 16.5C41.1902 14.3342 43.5011 13 46.002 13C49.8679 13 53.002 16.134 53.002 20C53.002 23.866 49.8679 27 46.002 27ZM62.9508 23.5C64.2012 25.6658 66.5121 27 69.0129 27C72.8789 27 76.0129 23.866 76.0129 20C76.0129 16.134 72.8789 13 69.0129 13C66.5121 13 64.2012 14.3342 62.9508 16.5C61.7003 18.6658 61.7003 21.3342 62.9508 23.5Z" fill="#4D4D4D"/>
+              </svg>
             <img src="img/catalog/pink.jpg" width="358" height="578" alt="Шаблон Pink App">
             <div class="overlay">
               <a href="#">
                 <h4 class="catalog-item-title">Pink App</h4>
               </a>
               <p class="catalog-description">Продуктовый лендинг приложения для iOS и Android</p>
-              <p class="catalog-item-price">900 ₽</p>
+              <p class="catalog-item-price">9 900 ₽</p>
             </div>
           </li>
           <li class="catalog-item">
             <h3 class="visually-hidden">Сайт барбешопа Бородинский</h3>
+            <svg class="catalog-item-box" width="360" height="40" viewBox="0 0 360 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path fill-rule="evenodd" clip-rule="evenodd" d="M4 0H356C358.2 0 360 1.8 360 4V40H0V4C0 1.8 1.8 0 4 0ZM16.9288 23.5C18.1792 25.6658 20.4901 27 22.991 27C26.857 27 29.991 23.866 29.991 20C29.991 16.134 26.857 13 22.991 13C20.4901 13 18.1792 14.3342 16.9288 16.5C15.6784 18.6658 15.6784 21.3342 16.9288 23.5ZM46.002 27C43.5011 27 41.1902 25.6658 39.9398 23.5C38.6893 21.3342 38.6893 18.6658 39.9398 16.5C41.1902 14.3342 43.5011 13 46.002 13C49.8679 13 53.002 16.134 53.002 20C53.002 23.866 49.8679 27 46.002 27ZM62.9508 23.5C64.2012 25.6658 66.5121 27 69.0129 27C72.8789 27 76.0129 23.866 76.0129 20C76.0129 16.134 72.8789 13 69.0129 13C66.5121 13 64.2012 14.3342 62.9508 16.5C61.7003 18.6658 61.7003 21.3342 62.9508 23.5Z" fill="#4D4D4D"/>
+              </svg>
             <img src="img/catalog/barbershop.jpg" width="358" height="578" alt="Шаблон Barbershop">
             <div class="overlay">
               <a href="#">
                 <h4 class="catalog-item-title">Barbershop</h4>
               </a>
               <p class="catalog-description">Сайт салона красоты.<br> Для мужчин, да.</p>
-              <p class="catalog-item-price">900 ₽</p>
+              <p class="catalog-item-price">9 900 ₽</p>
             </div>
           </li>
           <li class="catalog-item">
             <h3 class="visually-hidden">Сайт вязаных игрушек мишка</h3>
+            <svg class="catalog-item-box" width="360" height="40" viewBox="0 0 360 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path fill-rule="evenodd" clip-rule="evenodd" d="M4 0H356C358.2 0 360 1.8 360 4V40H0V4C0 1.8 1.8 0 4 0ZM16.9288 23.5C18.1792 25.6658 20.4901 27 22.991 27C26.857 27 29.991 23.866 29.991 20C29.991 16.134 26.857 13 22.991 13C20.4901 13 18.1792 14.3342 16.9288 16.5C15.6784 18.6658 15.6784 21.3342 16.9288 23.5ZM46.002 27C43.5011 27 41.1902 25.6658 39.9398 23.5C38.6893 21.3342 38.6893 18.6658 39.9398 16.5C41.1902 14.3342 43.5011 13 46.002 13C49.8679 13 53.002 16.134 53.002 20C53.002 23.866 49.8679 27 46.002 27ZM62.9508 23.5C64.2012 25.6658 66.5121 27 69.0129 27C72.8789 27 76.0129 23.866 76.0129 20C76.0129 16.134 72.8789 13 69.0129 13C66.5121 13 64.2012 14.3342 62.9508 16.5C61.7003 18.6658 61.7003 21.3342 62.9508 23.5Z" fill="#4D4D4D"/>
+              </svg>
             <img src="img/catalog/mishka.jpg" width="358" heightм="578" alt="Шаблон MISHKA">
             <div class="overlay">
               <a href="#">
                 <h4 class="catalog-item-title">MISHKA</h4>
               </a>
               <p class="catalog-description">Интернет-магазин <br> вязаных игрушек</p>
-              <p class="catalog-item-price">900 ₽</p>
+              <p class="catalog-item-price">9 900 ₽</p>
             </div>
           </li>
           <li class="catalog-item">
             <h3 class="visually-hidden">Интерактивный сайт а плюс</h3>
+            <svg class="catalog-item-box" width="360" height="40" viewBox="0 0 360 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path fill-rule="evenodd" clip-rule="evenodd" d="M4 0H356C358.2 0 360 1.8 360 4V40H0V4C0 1.8 1.8 0 4 0ZM16.9288 23.5C18.1792 25.6658 20.4901 27 22.991 27C26.857 27 29.991 23.866 29.991 20C29.991 16.134 26.857 13 22.991 13C20.4901 13 18.1792 14.3342 16.9288 16.5C15.6784 18.6658 15.6784 21.3342 16.9288 23.5ZM46.002 27C43.5011 27 41.1902 25.6658 39.9398 23.5C38.6893 21.3342 38.6893 18.6658 39.9398 16.5C41.1902 14.3342 43.5011 13 46.002 13C49.8679 13 53.002 16.134 53.002 20C53.002 23.866 49.8679 27 46.002 27ZM62.9508 23.5C64.2012 25.6658 66.5121 27 69.0129 27C72.8789 27 76.0129 23.866 76.0129 20C76.0129 16.134 72.8789 13 69.0129 13C66.5121 13 64.2012 14.3342 62.9508 16.5C61.7003 18.6658 61.7003 21.3342 62.9508 23.5Z" fill="#4D4D4D"/>
+              </svg>
             <img src="img/catalog/aplus.jpg" width="358" height="578" alt="Шаблон A Plus">
             <div class="overlay">
               <a href="#">
                 <h4 class="catalog-item-title">A Plus</h4>
               </a>
               <p class="catalog-description">Лендинг курсов повышения квалификации</p>
-              <p class="catalog-item-price">900 ₽</p>
+              <p class="catalog-item-price">9 900 ₽</p>
             </div>
           </li>
           <li class="catalog-item">
             <h3 class="visually-hidden">Сайт производителя кваса</h3> 
+            <svg class="catalog-item-box" width="360" height="40" viewBox="0 0 360 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path fill-rule="evenodd" clip-rule="evenodd" d="M4 0H356C358.2 0 360 1.8 360 4V40H0V4C0 1.8 1.8 0 4 0ZM16.9288 23.5C18.1792 25.6658 20.4901 27 22.991 27C26.857 27 29.991 23.866 29.991 20C29.991 16.134 26.857 13 22.991 13C20.4901 13 18.1792 14.3342 16.9288 16.5C15.6784 18.6658 15.6784 21.3342 16.9288 23.5ZM46.002 27C43.5011 27 41.1902 25.6658 39.9398 23.5C38.6893 21.3342 38.6893 18.6658 39.9398 16.5C41.1902 14.3342 43.5011 13 46.002 13C49.8679 13 53.002 16.134 53.002 20C53.002 23.866 49.8679 27 46.002 27ZM62.9508 23.5C64.2012 25.6658 66.5121 27 69.0129 27C72.8789 27 76.0129 23.866 76.0129 20C76.0129 16.134 72.8789 13 69.0129 13C66.5121 13 64.2012 14.3342 62.9508 16.5C61.7003 18.6658 61.7003 21.3342 62.9508 23.5Z" fill="#4D4D4D"/>
+              </svg>
             <img src="img/catalog/kvast.jpg" width="358" height="578" alt="Шаблон КВАСТ">
             <div class="overlay">
               <a href="#">
                 <h4 class="catalog-item-title">КВАСТ</h4>
               </a>
               <p class="catalog-description">Промо-сайт производителя крафтового кваса</p>
-              <p class="catalog-item-price">900 ₽</p>
+              <p class="catalog-item-price">9 900 ₽</p>
             </div>
           </li>
         </ul>
@@ -201,11 +227,13 @@
         </ul>
        </section>
        </div>
+       </div>
     </main>
              <!-- Footer -->
     <footer class="main-footer ">
-      <article class="map">
+      <div class="map">
         <h2 class="visually-hidden">Карта маршрута</h2>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3358.209072518182!2d30.315363971824745!3d59.968590215917736!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x469631508a3f8361%3A0x8945bc7da5ae11c9!2sReka%20Karpovka!5e0!3m2!1sen!2sus!4v1624513064375!5m2!1sen!2sus" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
         <!-- Здесь будет карта -->
          <img src="img/map.jpg" width="1440px" height="416" alt="Карта">
          <div class="address-wrapper">
@@ -216,7 +244,7 @@
          <a class="button map-button">НАПИШИТЕ НАМ</a>
        </div>
        </div>
-      </article>
+      </div>
       <!-- Social -->
       <section class="footer-social">
         <ul class="social-list">
