@@ -1,13 +1,13 @@
-let slides = document.querySelectorAll('.slider-slides');
+let slides = document.querySelectorAll('.slides');
 let controls = document.querySelectorAll('.control');
 let currentSlide = 1;
 
 let manualNav = function(manual){
-    slides.forEach((slider-slides) => {
-        slider-slides.classList.remove('slider-slides');
+    slides.forEach((slides) => {
+        slides.classList.remove('slide-current');
 
     controls.forEach((control) => {
-        control.classList.remove('control');
+        control.classList.remove('control-current');
         });
     });
 
@@ -20,5 +20,5 @@ controls.forEach((control, i) => {
     control.addEventListener("click", () => {
         manualNav(i);
         currentSlide = i;
-    })
+    });
 });

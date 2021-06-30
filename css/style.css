@@ -268,7 +268,7 @@
    box-sizing: border-box;
 }
  
-.slider-slides {
+.slides  {
     padding-top: 68px;
     padding-bottom: 70px;
     background-position: 100%;
@@ -360,25 +360,26 @@
     padding: 0;
     width: 18px;
     height: 18px;
-    background-color: transparent;
+    border: transparent;
     background-color: var(--basick-white);
     border: 2px solid var(--basick-white);
     border-radius: 50%;
     cursor: pointer;
   }
 
-  .slider-controls .control-current::after {
+  .control-current::after {
     position: absolute;
     content: "";
     width: 8px;
     height: 8px; 
-    background-color: transparent;
+    /* background-color: transparent; */
     background-color: var(--basick-white);
     border: 2px solid  var(--basic-neutral);
     border-radius: 50%;
-    left: 5px;
+    /* left: 5px; */
     top: 5px;
     box-sizing: border-box; 
+    margin-left: -4px;
   }
  
 
