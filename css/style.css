@@ -1332,7 +1332,7 @@
 }
 
 
-.map-button {
+.feedback-button {
     margin: 0;
     font-weight: 500;
     font-size: 16px;
@@ -1348,13 +1348,13 @@
     cursor: pointer;
 }
 
-.map-button:hover,
-.map-button:focus {
+.feedback-button:hover,
+.feedback-button:focus {
     background-color: var(--focus-red);
 }
 
-.map-button:active,
-.map-buttonprice:focus {
+.feedback-button:active,
+.feedback-button:focus {
     background-color: var(--active-red);
     box-shadow: inset 0px 3px 0px rgba(0, 1, 1, 0.1);
 }
@@ -1447,9 +1447,19 @@
     box-shadow: 0px 20px 40px rgba(0, 0, 0, 0.4);
     box-sizing: border-box;
     display: none;
+    
 }
 
-.modal-map {
+.modal-show {
+  display: block;
+  animation: bounce 0.6s;
+}
+
+.modal-error {
+  animation: shake 0.6s;
+}
+
+.modal-feedback {
     width: 960px;
     padding-top: 63px;
     padding-bottom: 84px;
@@ -1592,3 +1602,44 @@
     opacity: 0.1;
 }
 
+/* Animations */
+
+@keyframes bounce {
+  0% {
+    transform: translateY(-2000px);
+  }
+
+  70% {
+    transform: translateY(30px);
+  }
+
+  90% {
+    transform: translateY(-10px);
+  }
+
+  100% {
+    transform: translateY(0);
+  }
+}
+
+@keyframes shake {
+  0%,
+  100% {
+    transform: translateX(0);
+  }
+
+  10%,
+  30%,
+  50%,
+  70%,
+  90% {
+    transform: translateX(-10px);
+  }
+
+  20%,
+  40%,
+  60%,
+  80% {
+    transform: translateX(10px);
+  }
+}
