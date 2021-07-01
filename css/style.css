@@ -617,10 +617,9 @@
 .partnership {
     border-top: 2px solid var(--basic-extra-white);
     border-bottom: 2px solid var(--basic-extra-white);
-    height: 180px;
     margin-top: 70px;
     margin-bottom: 80px;
-    width: 1200px;
+    width: 1220px;
    
 }
 
@@ -629,31 +628,34 @@
     /* flex-wrap: wrap; */
     /* justify-content: space-around;  */
     list-style: none;
-    align-items: center;
     margin: 0;
     padding: 0;
     margin-top: 45px;
-    margin-bottom: 45px;
     text-align: center;
-    position: relative;
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr; 
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+   /* align-items: center; */
 }
 
+.partnership-item {
+  position: relative;
+  padding-bottom: 20px;
+  padding-top: 20px;
+}
 
 .partnership-item::after {
     content: "";
     position: absolute;
-    margin-left: 45px;
     width: 2px;
     height: 52px;
     background-color: var(--basic-extra-white);
-    top: 20px;
-   
+    /* top: 20px; */
+    left: 300px;
 }
 
 .partnership-item:last-child:after {
-    display: none; 
+  display: none; 
+  
 }
 
 .partnership-item img {
@@ -861,7 +863,7 @@
   .price-input-radio + label::before {
     content: "";
     position: absolute;
-    left: -40px;
+    left: -35px;
     top: -3px;
     width: 20px;
     height: 20px;
@@ -873,8 +875,8 @@
   .price-input-radio:checked + label::after {
     content: "";
     position: absolute;
-    top: 7px;
-    left: -30px;
+    top: 6px;
+    left: -25px;
     width: 9px;
     height: 9px;
     background-color: var(--text-extra-dark);
@@ -893,7 +895,11 @@
     opacity: 0.1;
   
 }
-  
+
+.price-input-radio:disabled + label,
+.price-input-radio:checked:disabled + label {
+  opacity: 0.3;
+} 
   
   .price-input-checkbox + label::before {
     content: "";
@@ -931,6 +937,10 @@
     opacity: 1;
   }
 
+.price-input-checkbox:disabled + label,
+.price-input-checkbox:checked:disabled + label {
+  opacity: 0.3;
+} 
 
 .price-input-checkbox:disabled + label::before,
 .price-input-checkbox:disabled + label::before {
@@ -1201,7 +1211,7 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-    margin-bottom: 20p;
+    
     padding-bottom:60px;
   }
   
@@ -1209,7 +1219,6 @@
     font-weight: 500;
     font-size: 16px;
     line-height: 18px;
-    /* display: inline-block; */
     text-align: center;
     width: 50px;
     height: 50px;
@@ -1218,7 +1227,8 @@
     border-radius: 3px;
     margin-right: 10px;
     text-transform: uppercase;
-    
+    border: 3px solid  var(--basic-extra-white);
+    box-sizing: border-box;
   }
   
 
@@ -1232,7 +1242,7 @@
     display: inline-block;
     text-decoration: none;
     color: var(--basic-black);
-    padding: 17px;
+    padding: 15px;
   }
   
   
@@ -1240,12 +1250,14 @@
   .pagination-item:focus {
     background-color: var(--focus-dark);
     cursor: pointer;
+    border-color: var(--focus-dark);
   }
   
   .pagination-item:focus,
   .pagination-item:active {
     background-color: var(--active-dark);
     box-shadow: inset 0px 3px 0px rgba(0, 1, 1, 0.1);
+    border-color: var(--active-dark);
   }
   
   .pagination-item-current,
@@ -1268,9 +1280,9 @@
   background-image: url("../img/map.jpg");
   background-repeat: no-repeat;
   height: 416px;
-  width: 100%;
   overflow: hidden;
- 
+  background-position: center;
+  background-size: 100%;
 }
 
 
@@ -1384,6 +1396,7 @@
 
 .footer-slogan {
     margin-left: 129px;
+    padding-top: 5px;
 }
 
 
