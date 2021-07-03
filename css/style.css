@@ -1445,6 +1445,11 @@
     
 }
 
+.social-list .social-icon img:active,
+.social-list .social-icon img:focus {
+  opacity: 0.3;
+}
+
 .footer-copyright {
     font-weight: 700;
     font-size: 36px;
