@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Нёрдс</title>
-    <link href="normalize.css" rel="stylesheet">
+    <link rel="stylesheet"  href="css/normalize.css">
     <link rel="stylesheet" href="css/style.css">
     <link href="https://fonts.googleapis.com/css2?family=Limelight&family=Roboto:wght@100;300;500&display=swap" rel="stylesheet">
     <link rel="icon" href="nerds.ico">
@@ -111,9 +111,9 @@
           <h2 class="visually-hidden">Сортировать по цене</h2>
           <h3 class="filter2-title">Сортировать:</h3>
           <ul class="breadcrumbs">
-            <li class="breadcrumbs-current"  href="#">По цене</li>
-            <li><a  href="#">По типу</a></li>
-            <li><a  href="#">По названию</a></li>
+            <li ><a class="breadcrumbs-current">По цене</a></li>
+            <li><a class="breadcrumbs-list" href="#">По типу</a></li>
+            <li><a   class="breadcrumbs-list" href="#">По названию</a></li>
           </ul>
           <div class="icon-container">
             <div>
@@ -139,12 +139,12 @@
               <path fill-rule="evenodd" clip-rule="evenodd" d="M4 0H356C358.2 0 360 1.8 360 4V40H0V4C0 1.8 1.8 0 4 0ZM16.9288 23.5C18.1792 25.6658 20.4901 27 22.991 27C26.857 27 29.991 23.866 29.991 20C29.991 16.134 26.857 13 22.991 13C20.4901 13 18.1792 14.3342 16.9288 16.5C15.6784 18.6658 15.6784 21.3342 16.9288 23.5ZM46.002 27C43.5011 27 41.1902 25.6658 39.9398 23.5C38.6893 21.3342 38.6893 18.6658 39.9398 16.5C41.1902 14.3342 43.5011 13 46.002 13C49.8679 13 53.002 16.134 53.002 20C53.002 23.866 49.8679 27 46.002 27ZM62.9508 23.5C64.2012 25.6658 66.5121 27 69.0129 27C72.8789 27 76.0129 23.866 76.0129 20C76.0129 16.134 72.8789 13 69.0129 13C66.5121 13 64.2012 14.3342 62.9508 16.5C61.7003 18.6658 61.7003 21.3342 62.9508 23.5Z" fill="#4D4D4D"/>
               </svg>
             <img src="img/catalog/sedona.jpg" width="358" height="578" alt="Шаблон седона">
-            <div class="overlay">
+            <div class="overlay" >
               <a href="sedona.html">
                 <h4 class="catalog-item-title">Sedona</h4>
               </a>
               <p class="catalog-description">Информационный сайт <br> для туристов</p>
-              <p class="catalog-item-price">9 900 ₽</p>
+              <a class="catalog-item-price" href="#"  aria-label="Добавить шаблон седона в корзину">9 900 ₽</a>
             </div>
           </li>
           <li tabindex="0" class="catalog-item">
@@ -158,7 +158,7 @@
                 <h4 class="catalog-item-title">Pink App</h4>
               </a>
               <p class="catalog-description">Продуктовый лендинг приложения для iOS и Android</p>
-              <p class="catalog-item-price">9 900 ₽</p>
+              <a class="catalog-item-price" href="#" aria-label="Добавить шаблон Pink App в корзину">9 900 ₽</a>
             </div>
           </li>
           <li tabindex="0" class="catalog-item">
@@ -172,7 +172,7 @@
                 <h4 class="catalog-item-title">Barbershop</h4>
               </a>
               <p class="catalog-description">Сайт салона красоты.<br> Для мужчин, да.</p>
-              <p class="catalog-item-price">9 900 ₽</p>
+              <a class="catalog-item-price" href="#" aria-label="Добавить шаблон Barbershop в корзину">9 900 ₽</a>
             </div>
           </li>
           <li  tabindex="0" class="catalog-item">
@@ -180,13 +180,13 @@
             <svg class="catalog-item-box" width="360" height="40" viewBox="0 0 360 40" fill="none" xmlns="http://www.w3.org/2000/svg">
               <path fill-rule="evenodd" clip-rule="evenodd" d="M4 0H356C358.2 0 360 1.8 360 4V40H0V4C0 1.8 1.8 0 4 0ZM16.9288 23.5C18.1792 25.6658 20.4901 27 22.991 27C26.857 27 29.991 23.866 29.991 20C29.991 16.134 26.857 13 22.991 13C20.4901 13 18.1792 14.3342 16.9288 16.5C15.6784 18.6658 15.6784 21.3342 16.9288 23.5ZM46.002 27C43.5011 27 41.1902 25.6658 39.9398 23.5C38.6893 21.3342 38.6893 18.6658 39.9398 16.5C41.1902 14.3342 43.5011 13 46.002 13C49.8679 13 53.002 16.134 53.002 20C53.002 23.866 49.8679 27 46.002 27ZM62.9508 23.5C64.2012 25.6658 66.5121 27 69.0129 27C72.8789 27 76.0129 23.866 76.0129 20C76.0129 16.134 72.8789 13 69.0129 13C66.5121 13 64.2012 14.3342 62.9508 16.5C61.7003 18.6658 61.7003 21.3342 62.9508 23.5Z" fill="#4D4D4D"/>
               </svg>
-            <img src="img/catalog/mishka.jpg" width="358" heightм="578" alt="Шаблон MISHKA">
+            <img src="img/catalog/mishka.jpg" width="358" height="578" alt="Шаблон MISHKA">
             <div class="overlay">
               <a href="mishka.html">
                 <h4 class="catalog-item-title">MISHKA</h4>
               </a>
               <p class="catalog-description">Интернет-магазин <br> вязаных игрушек</p>
-              <p class="catalog-item-price">9 900 ₽</p>
+              <a class="catalog-item-price" href="#" aria-label="Добавить шаблон MISHKA в корзину">9 900 ₽</a>
             </div>
           </li>
           <li tabindex="0" class="catalog-item">
@@ -200,7 +200,7 @@
                 <h4 class="catalog-item-title">A Plus</h4>
               </a>
               <p class="catalog-description">Лендинг курсов повышения квалификации</p>
-              <p class="catalog-item-price">9 900 ₽</p>
+              <a class="catalog-item-price" href="#" aria-label="Добавить шаблон A Plus в корзину">9 900 ₽</a>
             </div>
           </li>
           <li  tabindex="0" class="catalog-item">
@@ -214,7 +214,7 @@
                 <h4 class="catalog-item-title">КВАСТ</h4>
               </a>
               <p class="catalog-description">Промо-сайт производителя крафтового кваса</p>
-              <p class="catalog-item-price">9 900 ₽</p>
+              <a class="catalog-item-price" href="#" aria-label="Добавить шаблон КВАСТ в корзину">9 900 ₽</a>
             </div>
           </li>
         </ul>
@@ -233,12 +233,12 @@
   <footer class="main-footer">
     <div class="map">
       <h2 class="visually-hidden">Карта маршрута</h2>
-      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3358.209072518182!2d30.315363971824745!3d59.968590215917736!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x469631508a3f8361%3A0x8945bc7da5ae11c9!2sReka%20Karpovka!5e0!3m2!1sen!2sus!4v1624513064375!5m2!1sen!2sus" width="600" height="416px" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3358.209072518182!2d30.315363971824745!3d59.968590215917736!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x469631508a3f8361%3A0x8945bc7da5ae11c9!2sReka%20Karpovka!5e0!3m2!1sen!2sus!4v1624513064375!5m2!1sen!2sus" width="600" height="416" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
        <div class="address-wrapper">
       <div class="address">
        <h3 class="map-titel">NЁRDS DESIGN STUDIO</h3>
          <p >наб. Реки Карповки, <br> 5 лит П, Санкт-Петербург</p>
-         <p> +7 800 555-86-28</p>
+        <p><a href="tel:+78005558628" aria-label="Номер телефона компании NЁRDS">+7 800 555-86-28</a></p>
        <a class="button feedback-button" href="#">НАПИШИТЕ НАМ</a>
      </div>
      </div> 
